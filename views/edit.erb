@@ -1,0 +1,21 @@
+<h1>Edit an Order!</h1>
+<form method="POST" action="/pizza-orders">
+  <label for="first-name-field">First Name:</label>
+  <input type="text" name="first_name" id="first-name-field" value="<%= @pizza.first_name %>"/>
+  <label for="last-name-field">Last Name:</label>
+  <input type="text" name="last_name" id="last-name-field" value="<%= @pizza.last_name %>" />
+  <label for="quantity-field">Quantity:</label>
+  <input
+    type="number"
+    name="quantity" value= "<%= @pizza.quantity %>" min= 1 id="quantity-field">
+  <label for="topping-select">Choose your topping:</label>
+  <select class="" name="topping" id="topping-select" value="<%= @pizza.topping % selected>">
+    <option value="Pepperoni">Pepperoni</option>
+      <option value="Cheese">Cheese</option>
+      <option value="Italian Sausage">Italian Sausage</option>
+      <option value="Tomatoes, Olives and Extra Cheese">Tomatoes, Olives, and Extra Cheese</option>
+      <option value="Vegetarian">Veggie Fest!</option>
+      <option value="Meat Fest">Festival of Meat!</option>
+    </select>
+    <input type="submit" name="" value="Order Pizza">
+</form>
