@@ -1,0 +1,8 @@
+<h1>This is a Pizza!</h1>
+<hr>
+<p><%= @pizza.pretty_name() %> has ordered  <%= @pizza.quantity() %> <%= @pizza.topping() %> pizza(s).</p>
+<p>Order Total: $<%= @pizza.total() %></p>
+<p></p>
+<form action="/pizza-orders/<%= @pizza.id %>/delete" method="POST">
+  <input type="submit" name="" value="Delete Order">
+</form>

@@ -1,0 +1,21 @@
+<h1>Place an Order!</h1>
+<form method="POST" action="/pizza-orders">
+  <label for="first-name-field">First Name:</label>
+  <input type="text" name="first_name" id="first-name-field" />
+  <label for="last-name-field">Last Name:</label>
+  <input type="text" name="last_name" id="last-name-field" />
+  <label for="quantity-field">Quantity:</label>
+  <input
+    type="number"
+    name="quantity" value= 1 min= 1 id="quantity-field">
+  <label for="topping-select">Choose your topping:</label>
+  <select class="" name="topping" id="topping-select">
+    <option value="Pepperoni">Pepperoni</option>
+      <option value="Cheese">Cheese</option>
+      <option value="Italian Sausage">Italian Sausage</option>
+      <option value="Tomatoes, Olives and Extra Cheese">Tomatoes, Olives, and Extra Cheese</option>
+      <option value="Vegetarian">Veggie Fest!</option>
+      <option value="Meat Fest">Festival of Meat!</option>
+    </select>
+    <input type="submit" name="" value="Order Pizza">
+</form>
